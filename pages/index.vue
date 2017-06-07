@@ -1,13 +1,15 @@
 
 <template>
+
   <section class="container">
+  <div class="separator"></div>
     <div>
       
       
       <h2 class="subtitle">
-        I'm <span>James Zaccardo</span>, a frontend developer & UX/UI designer based in Los Angeles.
-        <div class="separator"></div>
-        <div class="vertical-line white-bg"></div>
+        I'm <span>James Zaccardo</span>, a frontend developer & UX/UI designer based in <span>Los Angeles</span>.
+        
+        
       </h2>
       
     </div>
@@ -26,8 +28,10 @@ export default {
 
 <style>
 
-h2 span {
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
+h2 span {
+  color: #2196f3;
 }
 
 .white-bg {
@@ -42,23 +46,29 @@ h2 span {
 }
 
 .separator {
-    width: 50px;
-    height: 2px;
-    margin-top: 150px;
-    background-color: #93e2f2;
+    width: 100%;
+    height: 400px;
+    margin-top: -210px;
+    background-color: gold;
+    transform: skewY(15deg);
+        z-index: -1;
+    position: absolute;
 }
+
+
 .container
 {
   min-height: 100vh;
   display: flex;
-  margin: 5%;
+  width: 960px;
+  
   justify-content: left;
   align-items: left;
   text-align: left;
 }
 .title
 {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Quicksand', sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
@@ -67,10 +77,10 @@ h2 span {
 }
 .subtitle
 {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  font-size: 62px;
-  color: #526488;
+  font-size: 53px;
+  color: whitesmoke;
   word-spacing: 5px;
   padding-bottom: 15px;
 }

@@ -1,4 +1,4 @@
-<p>meow</p>
+
 <template>
   <div>
   <my-header/>
